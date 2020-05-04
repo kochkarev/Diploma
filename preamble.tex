@@ -1,0 +1,53 @@
+\documentclass[titlepage, oneside, final, 14pt]{extarticle}
+
+\usepackage[utf8]{inputenc}		% UTF8 encoding support
+\usepackage[russian]{babel}		% add russian language
+\usepackage{amsmath}			% for math formulas
+\usepackage{amsfonts}			% for math formulas
+\usepackage{amssymb}			% for math formulas
+\usepackage{graphicx}			% load and work with pictures
+\usepackage{vmargin} 			% advanced page margins
+\usepackage{indentfirst} 		% intend first line of paragraph
+%\usepackage{subfiles}			% create sections with the same preamble as in main
+\usepackage{setspace}			% advanced spacing
+\usepackage{mathtools}			% advanced math tools
+%\usepackage{textcomp}			% provides many text symbols (e.g. degrees centigrade)
+\usepackage{gensymb}			% commands \degree, \celsius, \perthousand, \micro, \ohm
+\usepackage{caption}			% adds captions to pictures
+\usepackage{subcaption}			% adds captions for subfigures
+\usepackage{multirow}			% multirow support for tables
+\usepackage{hhline}				% doubled line support for tables
+\usepackage{nopageno}			% do not display number on title page and contents
+\usepackage{fancyhdr}			% avdanced headers and footers
+\usepackage{enumitem}			% support for enumerate, itemize and description
+\usepackage{xcolor}				% access to color tints, shades, tones, mixes of colors
+\usepackage{hyperref}			% package for handling cross-referencing
+\usepackage{float}				% improved floating objects (e.g figures, tables)
+\usepackage{cleveref}			% clever references (\cref)
+\usepackage{todonotes}			% to-do items support
+\usepackage[nottoc,numbib]{tocbibind} % add list of references to the table content
+%\usepackage{svg}
+\usepackage{epstopdf}
+\usepackage{graphicx,import}
+
+% ============================================================================================
+
+\setpapersize{A4}
+
+ % leftmargin, topmargin, rightmargin, bottommargin, headheight, headsep, footheight, footskip
+\setmarginsrb{3cm}{0cm}{1.5cm}{2cm}{0pt}{15mm}{0pt}{10mm}
+
+%\onehalfspacing
+
+\hypersetup{colorlinks,breaklinks,linkcolor=[rgb]{0.07, 0.03, 0.56},citecolor=[rgb]{0.1, 0.45, 0.27}}
+
+\bibliographystyle{unsrt}
+
+% This declaration makes TeX less fussy about line breaking. This can prevent overfull boxes, but may leave too much space between words
+\sloppy
+
+\graphicspath{ {./pics/} }
+
+\def \s {\phantom{-}}
+
+\newcommand \worry[1] {\textcolor{red}{ #1 }}
